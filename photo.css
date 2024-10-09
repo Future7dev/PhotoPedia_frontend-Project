@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main_box{
+    display: flex;
+    background-image: url(photo.jpg);
+    
+    height: 100vh;
+}
+.logo{
+    color: rgb(180, 144, 98);
+    text-align: right;
+    margin-bottom: 30px;
+    font-size:25px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    left: 26px;
+    top: 10px;
+   
+    
+}
+.logo1{
+    
+}
+.btn_two{
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 40px;
+    position: relative;
+    left: 5px;
+    top: 10px;
+    transition: 0.3s;
+}
+a{
+    text-decoration: none;
+    color: rgb(153, 212, 224);
+    transition: 0.3s;
+    
+}
+i{
+    color:rgb(221, 130, 227);
+    
+}
+ul{
+    font-size: 20px;
+    line-height: 70px;
+}
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+.btn_one{
+    display: inline-block;
+    font-size: 27px;
+    transition: 0.3s;
+    position: relative;
+    right: 15px;
+    left: 1px;
+}
+#check{
+    opacity: 0%;
+}
+.sidebar_menu{
+    
+    width: 220px;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.255);
+    border-radius: 25px;
+    box-shadow: 0px 0 16px 5px rgb(46, 156, 239),
+                0 0 16px 8px rgb(224, 14, 224);
+    position: relative;
+    right: 40px;
+    top: 50px;
+    transform: translateX(-500px);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+
+    
+}
+#check:checked{
+    ~.sidebar_menu{
+        transform: translateX(0px);
+    }
+    ~.btn_one{
+        opacity: 0%;
+    }
+
+}
+.kanit-medium{
+    padding-left: 10px;
+}
+li{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+li:hover{
+    box-shadow: 0 0 10px 3px white;
+    a{
+        color: aliceblue;
+        font-size: 20px;
+    }
+    i{
+        color:  rgb(226, 95, 95);
+    }
+}
+.social_media{
+    position: relative;
+    left: 20px;
+}
+.social_media ul a i:hover{
+    color: cornsilk;
+
+}
+.btn_two label i:hover{
+    color: rgb(226, 95, 95);
+}
+.btn_one label i:hover{
+    color:  rgb(226, 95, 95);
+}
+.Welcome{
+    display: inline-block;
+    font-size: 120px;
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: 100px;
+    
+    right: 10px;
+    left :10px;
+    
+    color: rgb(217, 22, 142);
+    text-shadow: 0 0 20px  rgb(218, 0, 25), 0 0 30px rgb(14, 36, 199);
+    animation: heading 15s linear 0s infinite alternate-reverse ;
+    /* animation: in 0.5s linear 0s 1 normal ; */
+}
+.pedia{
+    animation:opac 0.5s ease-out 0s 1 normal ;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    right: 100px;
+}
+.w{
+    font-size: 150px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    
+   
+
+
+    animation:flickerAnimation 0.8s linear 0s infinite alternate-reverse ;
+}
+.p{
+    animation:flick 0.5s linear 0s infinite alternate-reverse ;
+}
+.come {
+    animation: in 1s ease-out forwards; /* Duration increased for testing */
+    display: inline-block;
+}
+
+.shoots {
+    width: 1100px; /* Set to 100% to take full width */
+     /* Optional: Set a max-width if needed */
+    height: auto; /* Adjust height dynamically based on content */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    
+    justify-content: center;
+     /* Optional: Only for visual reference */
+    position: absolute; /* Position it absolutely */
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+    animation: blury 1s linear 0s 1 normal ;
+    
+}
+.photos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+.cards{
+    display: flex;
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px 5px rgb(255, 0, 68),
+                0 0 15px 7px rgb(213, 7, 240);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+    animation: shadow 10s linear 0s infinite alternate-reverse ;
+    
+}
+img{
+    width: 100%;
+    border-radius: 25px;
+}
+h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(230, 21, 115);
+    text-decoration:underline;
+    text-decoration-style: double;
+
+}
+
+
+
+.cards:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 10px rgb(7, 59, 232),  /* Change shadow color on hover */
+    0 0 20px 15px rgb(100, 7, 240);
+}
+
+
+
+@keyframes shadow {
+    0%{
+        box-shadow: 0 0 15px 5px rgb(252, 3, 231),
+                0 0 15px 7px rgb(240, 7, 7);
+    }
+    50%{
+        box-shadow: 0 0 15px 5px rgb(89, 3, 164),
+                0 0 15px 7px rgb(179, 5, 173);
+    }
+    100%{
+        box-shadow: 0 0 15px 5px rgb(5, 212, 215),
+                0 0 15px 7px rgb(100, 7, 240);
+    }
+    
+}
+
+@keyframes blury {
+    0%{
+        opacity: 0;
+        filter: blur(10px);
+       
+    }
+    50%{
+        opacity: 0.5;
+        filter: blur(6px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+
+
+
+@keyframes heading {
+    0%{
+        color: rgb(217, 22, 142);
+    text-shadow: 0 0 20px  rgb(218, 0, 25), 0 0 30px rgb(14, 36, 199);
+    }
+    25%{
+        color: rgb(223, 17, 51);
+    text-shadow: 0 0 20px  rgb(251, 2, 189), 0 0 30px rgb(231, 9, 9);
+    }
+    50%{
+        color: rgb(224, 9, 231);
+    text-shadow: 0 0 20px  rgb(218, 0, 25), 0 0 30px rgb(14, 36, 199);
+    }
+    75%{
+        color: rgb(10, 223, 223);
+    text-shadow: 0 0 20px  rgb(218, 0, 214), 0 0 30px rgb(199, 187, 14);
+    }
+    100%{
+        color: rgb(241, 236, 239);
+    text-shadow: 0 0 20px  rgb(218, 0, 51), 0 0 30px rgb(199, 187, 14);
+    }
+    
+}
+@keyframes opac {
+    0% {
+        transform: translateY(60px); /* Start 70px below its original position */
+        opacity: 0; /* Fully transparent */
+    }
+    50% {
+        transform: translateY(30px); /* Move halfway up */
+        opacity: 0.5; /* Half transparency */
+    }
+    100% {
+        transform: translateY(0px); /* At its original position */
+        opacity: 1; /* Fully opaque */
+    }
+}
+@keyframes flickerAnimation {
+    0% { opacity:1; }
+    20%{
+        opacity: 0.44;
+
+    }
+    40%{
+        opacity: 0.55;
+    }
+    50% { opacity:0.44; }
+    60%{
+        opacity: 0.55;
+    }
+    70%{
+        opacity: 0.33;
+    }
+    80%{
+            opacity: 0.55;
+    }
+    90%{
+        opacity: 0;
+    }
+    
+ }
+ @keyframes flick{
+    0%{
+        
+    text-shadow: 0 0 70px  rgb(218, 0, 25), 0 0 30px rgb(14, 36, 199);
+    }
+    25%{
+        
+    text-shadow: 0 0 50px  rgb(251, 2, 189), 0 0 30px rgb(231, 9, 9);
+    }
+    50%{
+        
+    text-shadow: 0 0 70px  rgb(218, 0, 25), 0 0 30px rgb(14, 36, 199);
+    }
+    75%{
+       
+    text-shadow: 0 0 60px  rgb(218, 0, 214), 0 0 30px rgb(199, 187, 14);
+    }
+    100%{
+        
+    text-shadow: 0 0 70px  rgb(218, 0, 51), 0 0 30px rgb(199, 187, 14);
+    }
+}
+@keyframes in {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-30px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
