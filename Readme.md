@@ -19,6 +19,6 @@
 ### Getting Started:
 To run the application locally:
 1. Clone the repository:  
-   `git clone https://github.com/yourusername/photo-pedia.git`
-2. Open the `index.html` file in your web browser.
+   `git clone https://github.com/Future7dev/PhotoPedia_frontend-Project.git`
+2. Open the `photography.html` file in your web browser.
 
